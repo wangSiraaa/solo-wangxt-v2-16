@@ -18,8 +18,11 @@ id_ed25519
 *.p12
 *.pfx
 node_modules/
+dist/
+test-output/
 .venv/
 venv/
 __pycache__/
 .pytest_cache/
 .DS_Store
+*.local

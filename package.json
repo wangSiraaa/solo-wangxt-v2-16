@@ -1,0 +1,31 @@
+{
+  "name": "booklet-imposition",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "纯浏览器骑马订小册子拼版工具 (Vue 3 + TypeScript + PDF.js + pdf-lib)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "node scripts/verify-imposed.mjs",
+    "test:geo": "node docs/verification/verify-geometry.mjs",
+    "test:browser": "node scripts/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.7.76",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "playwright": "^1.63.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.9",
+    "vitest": "^2.1.3",
+    "vue-tsc": "^2.1.6"
+  }
+}
